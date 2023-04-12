@@ -5,7 +5,7 @@
 %define _qtdir %{_libdir}/qt%{major}
 
 Name:		qt6-qtconnectivity
-Version:	6.4.2
+Version:	6.5.0
 Release:	%{?beta:0.%{beta}.1}%{?snapshot:1.%{snapshot}.}1
 %if 0%{?snapshot:1}
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtconnectivity.git
@@ -40,7 +40,7 @@ Qt %{major} connectivity module
 %{_qtdir}/lib/cmake/Qt6/FindBlueZ.cmake
 
 %global extra_devel_files_Nfc \
-%{_qtdir}/lib/cmake/Qt6/FindPCSCLite.cmake \
+%{_qtdir}/lib/cmake/Qt6/FindPCSCLITE.cmake \
 %{_qtdir}/lib/cmake/Qt6BuildInternals/StandaloneTests/QtConnectivityTestsConfig.cmake
 
 %qt6libs Bluetooth Nfc
