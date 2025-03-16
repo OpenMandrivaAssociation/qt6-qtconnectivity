@@ -1,11 +1,11 @@
-#define beta rc2
+%define beta rc
 #define snapshot 20200627
 %define major 6
 
 %define _qtdir %{_libdir}/qt%{major}
 
 Name:		qt6-qtconnectivity
-Version:	6.8.2
+Version:	6.9.0
 Release:	%{?beta:0.%{beta}.}%{?snapshot:0.%{snapshot}.}1
 %if 0%{?snapshot:1}
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtconnectivity.git
@@ -45,6 +45,19 @@ Qt %{major} connectivity module
 %{_qtdir}/sbom/*
 
 %qt6libs Bluetooth Nfc
+
+%package devel
+Summary: Development files for the Qt %{major} Connectivity module
+Group: Development/KDE and Qt
+
+%description devel
+Development files for the Qt %{major} Connectivity module
+
+%files devel
+%{_qtdir}/include/QtConnectivity
+%{_qtdir}/lib/cmake/Qt6Connectivity
+%{_qtdir}/mkspecs/modules/qt_lib_connectivity_private.pri
+%{_qtdir}/modules/Connectivity.json
 
 %package examples
 Summary: Examples for the Qt %{major} Connectivity module
