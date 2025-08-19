@@ -18,7 +18,9 @@ Summary:	Qt %{major} Connectivity module
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(Qt%{major}Core)
+BuildRequires:	cmake(Qt%{major}CorePrivate)
 BuildRequires:	cmake(Qt%{major}Network)
+BuildRequires:	cmake(Qt%{major}NetworkPrivate)
 BuildRequires:	cmake(Qt%{major}Widgets)
 BuildRequires:	cmake(Qt%{major}DBus)
 BuildRequires:	cmake(Qt%{major}Gui)
