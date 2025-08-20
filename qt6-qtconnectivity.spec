@@ -31,6 +31,8 @@ BuildRequires:	cmake(Qt%{major}Quick)
 BuildRequires:	cmake(Qt%{major}QuickControls2)
 BuildRequires:	pkgconfig(libpcsclite)
 BuildRequires:	pkgconfig(bluez)
+BuildRequires:	pkgconfig(opengl)
+BuildRequires:	pkgconfig(glx)
 BuildRequires:	qt%{major}-cmake
 License:	LGPLv3/GPLv3/GPLv2
 
