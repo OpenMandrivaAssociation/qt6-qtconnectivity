@@ -55,6 +55,7 @@ Qt %{major} connectivity module
 %package devel
 Summary: Development files for the Qt %{major} Connectivity module
 Group: Development/KDE and Qt
+Provides: cmake(Qt6ConnectivityPrivate) = %{EVRD}
 
 %description devel
 Development files for the Qt %{major} Connectivity module
